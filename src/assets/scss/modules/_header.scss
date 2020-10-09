@@ -1,0 +1,50 @@
+.header {
+  background-color: rgba($main-blue, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    background-color: $main-blue;
+    font-weight: 500;
+    padding: 1rem 2.2rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+
+    span {
+      font-size: 2.3rem;
+      color: #fff;
+    }
+  }
+
+  nav {
+    padding: 1rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      li {
+        margin-left: 1rem;
+        font-weight: 300;
+      }
+
+      li a {
+        color: #fff;
+      }
+    }
+
+    .get-in-touch {
+      background-color: $main-blue;
+      padding: 0.5rem 1rem;
+    }
+  }
+}
