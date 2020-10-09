@@ -1,0 +1,29 @@
+{
+  "name": "travel-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Darsh2987/travel-site.git",
+  "author": "Darsh <darsh2987@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "mini-css-extract-plugin": "^1.0.0",
+    "optimize-css-assets-webpack-plugin": "*",
+    "style-loader": "*",
+    "terser-webpack-plugin": "*",
+    "copy-webpack-plugin": "*",
+    "html-loader": "*",
+    "html-webpack-plugin": "*",
+    "node-sass": "*",
+    "sass-loader": "*",
+    "url-loader": "*",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build": "webpack --mode development --watch",
+    "build:prod": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
