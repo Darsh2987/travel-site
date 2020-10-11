@@ -69,6 +69,47 @@
   }
 }
 
-.testimonials {
-  display: none;
+@media screen and (max-width: 1200px) {
+  .testimonials {
+    &--headline {
+      display: block;
+      text-align: center;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      h3 {
+        font-size: 1.3em;
+        width: 300px;
+      }
+    }
+  }
+
+  .testimonial--container {
+    display: unset;
+
+    .testimonial {
+      width: 100%;
+      margin: 0 0 8rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .testimonials {
+    &--headline {
+      display: block;
+      text-align: center;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      h3 {
+        font-size: 1.3em;
+        width: 300px;
+      }
+    }
+  }
 }
