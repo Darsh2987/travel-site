@@ -1,13 +1,13 @@
 .large-hero {
-  background-image: url("../images/hero--large.jpg");
+  background-image: url("../images/hero--large-hi-dpi.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  text-align: center;
   border-bottom: 10px solid $main-blue;
 
   h1 {
@@ -31,12 +31,13 @@
     width: 450px;
     text-align: center;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-    font-weight: 300;
+    font-weight: 200;
 
     a {
       font-size: 1.4rem;
       background: $main-orange;
       padding: 1rem 1.5rem;
+      font-weight: 300;
     }
   }
 
@@ -44,5 +45,46 @@
   a {
     color: #fff;
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .large-hero {
+    background-image: url("../images/hero--large-hi-dpi.jpg");
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .large-hero {
+    background-image: url("../images/hero--medium-hi-dpi.jpg");
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .large-hero {
+    background-image: url("../images/hero--small-hi-dpi.jpg");
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .large-hero {
+    background-image: url("../images/hero--smaller-hi-dpi.jpg");
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .large-hero {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      width: 300px;
+    }
   }
 }
