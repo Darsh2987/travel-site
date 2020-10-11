@@ -70,6 +70,17 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .testimonial--container {
+    display: unset;
+
+    .testimonial {
+      width: 100%;
+      margin: 0 0 8rem 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .testimonials {
     &--headline {
       display: block;
@@ -77,21 +88,13 @@
 
       h2 {
         font-size: 2.5rem;
+        margin-left: 0;
       }
 
       h3 {
         font-size: 1.3em;
         width: 300px;
       }
-    }
-  }
-
-  .testimonial--container {
-    display: unset;
-
-    .testimonial {
-      width: 100%;
-      margin: 0 0 8rem 0;
     }
   }
 }
