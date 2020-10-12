@@ -1,14 +1,15 @@
 .footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   background-color: $main-blue;
-  display: none;
 
   p {
     font-weight: 300;
   }
 
-  a {
+  &--button {
     padding: 1rem 1.5rem;
     margin-left: 1.5rem;
     background-color: $main-orange;
@@ -17,5 +18,17 @@
   p,
   a {
     color: #fff;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+
+    &--button {
+      margin: 1rem 0 0 0;
+    }
   }
 }
