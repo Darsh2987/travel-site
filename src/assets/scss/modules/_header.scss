@@ -71,7 +71,7 @@
     }
 
     &--mobile-hamburger-icon {
-      position: absolute;
+      position: fixed;
       top: 20px;
       right: 20px;
       display: flex;
@@ -130,6 +130,29 @@
 
     nav {
       display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($main-blue, 0.95);
+      z-index: 5;
+
+      ul {
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+
+        li {
+          font-size: 1.3rem;
+          margin: 0 0 1rem 0;
+        }
+      }
+
+      .get-in-touch {
+        background-color: $main-orange;
+        margin-top: 1rem;
+      }
     }
   }
 }
