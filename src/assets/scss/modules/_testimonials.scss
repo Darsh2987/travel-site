@@ -1,5 +1,5 @@
 .testimonials {
-  padding: 4rem 0;
+  padding: 4rem 0 0 0;
   background-image: url("../images/testimonials-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -76,6 +76,10 @@
     .testimonial {
       width: 100%;
       margin: 0 0 8rem 0;
+    }
+
+    .testimonial:last-child {
+      margin: 0;
     }
   }
 }
