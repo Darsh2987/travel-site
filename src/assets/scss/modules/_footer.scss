@@ -21,14 +21,10 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 800px) {
   .footer {
     flex-direction: column;
     text-align: center;
     padding: 2rem 1.5rem;
-
-    &--button {
-      margin: 1rem 0 0 0;
-    }
   }
 }

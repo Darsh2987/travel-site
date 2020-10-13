@@ -1,0 +1,20 @@
+.get-in-touch {
+  background-color: $main-orange;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.large-hero .get-in-touch {
+  width: unset;
+  font-size: 1.4rem;
+}
+
+.footer .get-in-touch {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .footer .get-in-touch {
+    margin: 1rem 0 0 0;
+  }
+}
