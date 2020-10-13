@@ -13,7 +13,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10rem;
 
     h2 {
       font-size: 4rem;
@@ -32,12 +31,15 @@
 .testimonial--container {
   display: flex;
 
+  .overflow-hidden {
+    padding: 8rem 1rem 0 1rem;
+    width: 33%;
+  }
+
   .testimonial {
     background-color: hsla(0, 0%, 100%, 0.8);
     text-align: center;
-    margin-right: 3rem;
     padding: 0 1.8rem 2rem 1.8rem;
-    width: 33.33%;
 
     img {
       position: relative;
@@ -70,8 +72,16 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .testimonials--headline {
+    margin-bottom: 0;
+  }
   .testimonial--container {
     display: unset;
+
+    .overflow-hidden {
+      padding: 8rem 0 0 0;
+      width: unset;
+    }
 
     .testimonial {
       width: 100%;

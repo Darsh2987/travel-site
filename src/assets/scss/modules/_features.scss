@@ -40,6 +40,7 @@
       grid-template-areas:
         "featureimg featureheader"
         ". featureinfo";
+      padding: 2rem;
 
       img {
         grid-area: featureimg;
@@ -77,11 +78,13 @@
   .our-features--features {
     grid-template-columns: 1fr;
     grid-gap: 4rem;
-    padding: 2rem;
+    padding: 1rem 0;
 
     .feature {
-      display: unset;
+      display: flex;
+      flex-direction: column;
       text-align: center;
+      padding: 1rem;
 
       img {
         margin-bottom: 1rem;
@@ -93,7 +96,7 @@
       }
 
       p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
 
       p {
