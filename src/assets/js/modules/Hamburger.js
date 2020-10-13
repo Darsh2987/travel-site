@@ -1,3 +1,5 @@
+import resetNav from "./Reset-nav";
+
 // function to show nav overlay when hamburger icon is cliked
 function hamburger() {
   document.querySelector("#hamburger").addEventListener("click", () => {
@@ -5,7 +7,7 @@ function hamburger() {
       resetNav();
     } else {
       nav.classList.add("show-nav-mobile");
-      hamburgerBtn.classList.add("hamburger-cross");
+      document.querySelector(".hamburger").classList.add("hamburger-cross");
     }
   });
 }
