@@ -15,7 +15,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn install
-          yarn run-script build:prod
+          yarn build:prod
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
