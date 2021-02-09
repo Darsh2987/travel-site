@@ -36,6 +36,7 @@
     .feature {
       display: grid;
       justify-content: center;
+      align-items: center;
       grid-column-gap: 2rem;
       grid-template-areas:
         "featureimg featureheader"
@@ -44,6 +45,7 @@
 
       img {
         grid-area: featureimg;
+        width: 80px;
       }
 
       h3 {
